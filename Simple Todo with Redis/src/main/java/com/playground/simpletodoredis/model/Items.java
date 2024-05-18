@@ -4,41 +4,42 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Objects;
 
 @Entity
+@Setter
+@Getter
 @Table(name = "items")
 public class Items {
     @Id
     @Column(nullable = false)
     private Integer uid;
+    @Setter
     @Column(nullable = false)
     private String task;
 
     public Items() {
-
+        this(0, null);
     }
 
-    public Items(Integer uid, String task) {
+    public Items(int uid, String task) {
         this.uid = uid;
         this.task = task;
     }
 
-    public Integer UID() {
-        return uid;
+    public int UID() {
+        return this.uid;
     }
 
     public String task() {
-        return task;
+        return this.task;
     }
 
-    public void setUid(Integer UID) {
+    public void setUid(int UID) {
         this.uid = UID;
-    }
-
-    public void setTask(String task) {
-        this.task = task;
     }
 
     @Override
