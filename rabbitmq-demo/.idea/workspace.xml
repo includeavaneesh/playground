@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dc5351e-55ec-4251-a037-514e1607c279" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple Todo with Redis/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple Todo with Redis/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple Todo with Redis/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
@@ -26,6 +21,7 @@
       <change beforePath="$PROJECT_DIR$/../Simple Todo with Redis/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple Todo with Redis/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Simple Todo with Redis/src/test/java/com/playground/simpletodoredis/SimpleTodoWithRedisApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redis-todo/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-todo/docker/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redis-todo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-todo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../redis-todo/src/main/java/com/playground/redistodo/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/../redis-todo/src/main/java/com/playground/redistodo/Event.java" afterDir="false" />
@@ -61,38 +57,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Application.NewTask.executor": "Run",
-    "Application.Recv.executor": "Run",
-    "Application.RecvLogs.executor": "Run",
-    "Application.Send.executor": "Run",
-    "Application.SendLogs.executor": "Run",
-    "Application.Worker.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.EmitLogDirect.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NewTask.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Recv.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RecvLogs.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RecvLogsDirect.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Send.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SendLogs.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Worker.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.SendLogs">
-    <configuration name="NewTask" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.playground.WorkQueues.NewTask" />
+}</component>
+  <component name="RunManager" selected="Application.EmitLogDirect">
+    <configuration name="EmitLogDirect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.playground.Routing.EmitLogDirect" />
       <module name="rabbitmq-demo" />
-      <option name="PROGRAM_PARAMETERS" value="First message....." />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.playground.WorkQueues.*" />
+          <option name="PATTERN" value="com.playground.Routing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +97,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.playground.HelloWorld.Recv" />
+    <configuration name="NewTask" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.playground.WorkQueues.NewTask" />
       <module name="rabbitmq-demo" />
+      <option name="PROGRAM_PARAMETERS" value="First message....." />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.playground.HelloWorld.*" />
+          <option name="PATTERN" value="com.playground.WorkQueues.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Send" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.playground.HelloWorld.Send" />
+    <configuration name="RecvLogsDirect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.playground.Routing.RecvLogsDirect" />
       <module name="rabbitmq-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.playground.HelloWorld.*" />
+          <option name="PATTERN" value="com.playground.Routing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,19 +165,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.NewTask" />
+      <item itemvalue="Application.EmitLogDirect" />
       <item itemvalue="Application.RecvLogs" />
+      <item itemvalue="Application.RecvLogsDirect" />
       <item itemvalue="Application.SendLogs" />
-      <item itemvalue="Application.Recv" />
-      <item itemvalue="Application.Send" />
       <item itemvalue="Application.Worker" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmitLogDirect" />
+        <item itemvalue="Application.RecvLogsDirect" />
         <item itemvalue="Application.SendLogs" />
         <item itemvalue="Application.RecvLogs" />
         <item itemvalue="Application.Worker" />
-        <item itemvalue="Application.Recv" />
-        <item itemvalue="Application.Send" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +199,9 @@
       <workItem from="1716334225500" duration="458000" />
       <workItem from="1716334705746" duration="3399000" />
       <workItem from="1716345505441" duration="772000" />
-      <workItem from="1716422846559" duration="1550000" />
+      <workItem from="1716422846559" duration="3789000" />
+      <workItem from="1716931789700" duration="182000" />
+      <workItem from="1717167112178" duration="705000" />
     </task>
     <servers />
   </component>
